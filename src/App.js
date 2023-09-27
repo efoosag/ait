@@ -1,9 +1,11 @@
-import LoginPage from "./pages/LoginPage";
+import Navbar from "./components/Navbar";
+// import LoginPage from "./pages/LoginPage";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-       <LoginPage />
+        <Navbar />
+       {/* <LoginPage /> */}
       </header>
     </div>
   );
