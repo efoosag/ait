@@ -2,10 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
-  min-width: 388px;
-  width: 428px;
+  width: 428px; 
   height: 88px;
   background-color: white;
+  border-bottom: 1px solid #C9C9C9;
+  box-shadow: 0 2px 8px #2DA90E;
   /* @media only screen and (min-width: 428px) {
     max-width: 100vw;
     height: 100vh;    
@@ -14,6 +15,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
   width: 100%;
   display: flex;  
+  background-color: aliceblue;
 `
 const Menu = styled.img`
   width: 32px;
@@ -39,7 +41,7 @@ const CompanyName = styled.h1`
   font-size: 15px;
   line-height: 17.58px;
   text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
-  color: white;
+  color: white;  
 `
 
 const Plant = styled.img`
