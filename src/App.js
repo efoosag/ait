@@ -1,13 +1,17 @@
-import Navbar from "./components/Navbar";
-// import LoginPage from "./pages/LoginPage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import MainPage from "./pages/MainPage";
+import SignupPage from "./pages/SignupPage"
+import LoginPage from "./pages/LoginPage"
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Navbar />
-       {/* <LoginPage /> */}
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainPage />}  />
+        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/login" element={<LoginPage />} />
+      </Routes>
+    </Router>
   );
 }
 
